@@ -8,13 +8,13 @@ phases: #
   pre_build:
     commands:
     - chmod +x install-terraform.sh
-    - chmod +x configure-profile.sh
+    - chmod +x configure-named-profile.sh
     - chmod +x apply-terraform.sh
     # Terraform Installation
     - ./install-terraform.sh
 
     # Configure Profile (Credentials)
-    - ./configure-profile.sh
+    - ./configure-named-profile.sh
 
   build:
     commands:
